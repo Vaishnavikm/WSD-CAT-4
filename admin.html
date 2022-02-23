@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christ University</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <style>
+        h1{
+            color: rgb(7, 6, 6);
+            margin: 0;
+            font-size:x-large;
+        }
+        form {
+            color: white;
+        }
+    </style>
+    <h1>Blossoms - Christ University</h1>
+    <form action="/add" method="POST">
+        <input type="text" id="sid" name="sid" placeholder="Register Number"/><br><br>
+        <input type="text" id="sname" name="sname" placeholder="Name"/><br><br>
+        <input type="text" id="sclass" name="sclass" placeholder="Class"/><br><br>
+        <input type="text" id="sevent" name="sevent" placeholder="Event type"/><br><br>
+        <input type="text" id="steam" name="steam" placeholder="Team name"/><br><br>
+        <input type="submit" name="Submit"/>
+    </form>
+
+    <!-- <h1>Delete records</h1>
+    <form action="/delete" method="POST">
+        <input type="text" id="sudid" name="sudid" placeholder="Register Number"/><br><br>
+        <br><br><input type="submit" name="Submit"/>
+    </form> -->
+    
+    <h1> Update Event Information </h1>
+    <form action="/update" method="POST">
+        <input type="text" id="teamname" name="teamname" placeholder="Team name"/><br><br>
+        <br><br>
+        <input type="text" id="eventid" name="eventid" placeholder="Event type"/><br><br>
+        <br><br>
+          <input type="submit"  placeholder="Event info"/>
+    </form> 
+
+
+    <h1>Display student info based on event type</h1>
+    <form action="/edisplay" method="POST">
+        <input type="text" id="eventid" name="eventid" placeholder="Event type"/><br><br>
+        <input type="submit" name="Submit"/>
+    </form>
+
+    <h1>Display student info based on team name</h1>
+    <form action="/sinfodisplay" method="POST">
+        <input type="text" id="teamname" name="teamname" placeholder="Team name"/><br><br>
+       <input type="submit" name="Submit"/>
+    </form>
+    
+</body>
+</html>

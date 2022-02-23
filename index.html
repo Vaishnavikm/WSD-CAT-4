@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-contoller="myctrl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <title>Christ University</title>
+</head>
+<body>
+    <style>
+        h1{
+            text-align: center;
+            color: white;
+            background-color: #4f5252;
+            padding:1%;
+            margin: 0;
+        }
+        table{
+            background-color: #f8f0f0;
+            width:90%;
+        }
+        td, th{
+            text-align:left;
+            font-size: small;
+        }
+    </style>
+    <table>
+        <tr>
+            <th>S_Regno</th>
+            <th>S_Name</th>
+            <th>S_Class</th>
+            <th>S_Event</th>
+            <th>S_team</th>
+        </tr>
+        <tr ng-repeat="item in studentinformation">
+            <td>{{item.S_Regno}}</td>
+            <td>{{item.S_name}}</td>
+            <td>{{item.S_class}}</td>
+            <td>{{item.S_event}}</td>
+            <td>{{item.S_team}}</td>
+        </tr>
+    </table>
+    <script src="angular.js"></script>
+</body>
+</html>
